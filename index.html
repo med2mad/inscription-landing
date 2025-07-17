@@ -9,6 +9,21 @@
     <link rel="stylesheet" href="css/tooplate-style.css">
     <title>New Spot HTML Page by Tooplate</title>
     <!-- Template 2107 New Spot	http://www.tooplate.com/view/2107-new-spot -->
+    <style>
+        li {
+            color: rgb(68, 68, 68);
+        }
+
+        .lead b,
+        li b {
+            font-weight: bold;
+        }
+
+        .thank-you-container b {
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
 
     <script type="module">
         import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
@@ -33,18 +48,22 @@
 </head>
 
 <body>
-    <div class="tm-container mx-auto">
+    <div class="tm-container mx-auto" style="background-image: linear-gradient(90deg, #c5c5c5, white, #c5c5c5);">
         <section class="tm-section tm-section-1">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="tm-bg-circle-white tm-flex-center-v">
                             <header class="text-center">
-                                <h1 class="tm-site-title">Formation IT</h1>
-                                <p class="tm-site-subtitle">Création de Software</p>
+                                <h1 class="tm-site-title">Formation<br />Informatique</h1>
+                                <p class="tm-site-subtitle mb-0">Casablanca - Oulfa</p>
                             </header>
-                            <p>The Parcours débutant, ou Technologies spécifiques
-                                Niveau qui vous convient.</p>
+                            <p class="lead">
+                                - <b>Parcours</b> Débutant ou Avancé<br />
+                                - <b>Choix</b> d'un outil ou d'une technologie entière<br />
+                                - <b>Horaire/Emplacement</b> qui vous conviennent<br />
+                                - Avec le <b>Niveau</b> qui vous satisfait
+                            </p>
                             <p class="text-center mt-4 mb-0">
                                 <a data-scroll href="#tm-section-3" class="btn tm-btn-secondary">Inscription...</a>
                             </p>
@@ -56,29 +75,33 @@
         <section id="tm-section-2" class="tm-section pt-2 pb-2">
             <div class="container">
                 <div class="row">
-                    <div class="tm-flex-center-v tm-text-container tm-section-left">
-                        <h2 class="tm-color-secondary" style="margin-bottom:20px;">Infos sur les formations</h2>
+                    <div class="tm-flex-center-v tm-text-container tm-section-left xxx">
+                        <h2 class="tm-color-secondary" style="margin-bottom:30px;">Informations</h2>
+                        <div class="zzz zzz1"></div>
                         <h5 style="margin-bottom:0;">Modules</h5>
                         <ul class="mb-4">
-                            <li class="">Parcours débutant, ou Technologies spécifiques</li>
-                            <li class="">Niveau qui vous convient</li>
+                            <li>Création d'applications <b>Web</b>, <b>Mobiles</b>, ou <b>Logiciels</b>
+                                installables</li>
+                            <li>Parcours <b>Débutant</b>. Ou maitrise de <b>Technologies spécifiques</b></li>
                         </ul>
+                        <div class="zzz zzz2"></div>
                         <h5 style="margin-bottom:0;">Horaires</h5>
                         <ul class="mb-4">
-                            <li class="">Horaires qui vous conviennent (jour/nuit/weekend)</li>
-                            <li class="">En groupe / Individuel &#8211; À distance / En présentiel</li>
+                            <li>Horaires qui vous conviennent (jour/nuit/weekend)</li>
+                            <li>En groupe / Individuel &#8211; À distance / En présentiel</li>
                         </ul>
-                        <h5 style="margin-bottom:0;">Prix</h5>
+                        <div class="zzz zzz3"></div>
+                        <h5 style="margin-bottom:0;" class="zzz3h5">Prix</h5>
                         <ul class="mb-4">
-                            <li class="">25 DH par heure (35 DH chez vous)</li>
+                            <li>25 DH par heure (<span class="tm-site-subtitle mb-0">quartier oulfa</span>)</li>
+                            <li>35 DH par heure (<span class="tm-site-subtitle mb-0">chez vous</span>)</li>
                         </ul>
                         <p class="text-right mb-0">
                             <a href="#tm-section-3" class="btn tm-btn-secondary">Inscription...</a>
                         </p>
                     </div>
                     <div class="col-xl-5 col-lg-6 tm-circle-img-container">
-                        <img src="img/img-01.jpg" alt="Image" class="rounded-circle tm-circle-img"
-                            style="border:solid 2px rgb(189, 189, 189);">
+                        <img src="img/img-01.jpg" alt="Image" class="rounded-circle tm-circle-img">
                     </div>
                 </div>
             </div>
@@ -97,11 +120,11 @@
                                         required />
                                 </div>
                                 <select class="form-control mb-4" id="formation" name="formation" required>
-                                    <option value="">Choisir une formation ...</option>
+                                    <option value="">Choisissez une formation ...</option>
                                     <option value="Création de sites web (Débutant)">Création de sites web (Débutant)
                                     </option>
-                                    <option value="Création des Applications web/mobile">Création des Applications
-                                        web/mobile
+                                    <option value="Création des Applications web/mobile">Création d'Applications
+                                        Web/Mobile/Desktop
                                     </option>
                                     <option value="Bureautique (Microsoft office)">Bureautique (Microsoft office)
                                     </option>
@@ -110,21 +133,23 @@
                                     <button type="submit" class="btn tm-btn-primary tm-send-btn">Envoyer</button>
                                 </div>
                             </form>
+
+
+                            <div class="thank-you-container" style="margin-top:30px; text-align: center">
+
+                                Merci de contacter "<b><i>Mohamed Leghdaich</i></b>" à :<br /> 06 44 63 86 60<br />
+                                Pour confirmer l'horaire et l'emplacement
+
+                            </div>
+
+
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <footer class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <p class="small mb-4 tm-footer-text">Copyright &copy; 2018 Company Name
-                        | Design: <a rel="nofollow" href="https://www.tooplate.com" class="tm-footer-link">Tooplate</a>
-                    </p>
-                </div>
-            </div>
-        </footer>
     </div>
 </body>
 

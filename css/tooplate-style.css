@@ -93,14 +93,10 @@ body {
 .tm-bg-circle-white {
   background-color: white;
   color: #6c6c6c;
-  padding: 75px 81px 75px 90px;
+  padding: 75px 60px 75px 60px;
   border-radius: 50%;
   width: 550px;
   height: 550px;
-}
-
-.tm-bg-circle-pad-2 {
-  padding-left: 120px;
 }
 
 p,
@@ -145,10 +141,6 @@ a.btn:hover {
   justify-content: center;
 }
 
-.tm-text-container {
-  max-width: 420px;
-}
-
 .tm-circle-img {
   width: 550px;
 }
@@ -187,6 +179,49 @@ a.btn:hover {
 .tm-footer-link:focus {
   color: #cc0064;
   text-decoration: none;
+}
+
+.xxx {
+  position: relative;
+}
+
+.xxx h5 {
+  color: black;
+}
+
+.xxx h5,
+.xxx ul {
+  z-index: 2;
+}
+
+.zzz {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transform: rotate(20deg);
+  position: absolute;
+  left: -8px;
+  z-index: 1;
+}
+
+.zzz1 {
+  background-image: linear-gradient(175deg, #cbe72c, rgba(255, 255, 255, 0));
+  top: 110px;
+}
+
+.zzz2 {
+  background-image: linear-gradient(175deg, rgb(25, 220, 255), rgba(25, 221, 255, 0));
+  top: 230px;
+}
+
+.zzz3 {
+  background-image: linear-gradient(175deg, rgb(150, 149, 245), rgba(25, 221, 255, 0));
+  top: 355px;
+}
+
+.zzz3h5 {
+  transform: translate(20px);
 }
 
 @media (min-width: 576px) {
