@@ -93,7 +93,7 @@ body {
 .tm-bg-circle-white {
   background-color: white;
   color: #6c6c6c;
-  padding: 75px 60px 75px 60px;
+  padding: 75px 30px !important;
   border-radius: 50%;
   width: 550px;
   height: 550px;
@@ -280,6 +280,18 @@ a.btn:hover {
 
   .tm-circle-img-container {
     margin-bottom: 30px;
+  }
+
+  .adresse {
+    display: none;
+  }
+
+  .tm-site-title1 {
+    font-size: 2.5rem;
+  }
+
+  .xxx {
+    margin-left: 10px;
   }
 }
 
